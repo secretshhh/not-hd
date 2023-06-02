@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box !important;
+}
+
+.panel-heading {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.header-logo {
+  width: 100%;
+  max-width: 300px;
+}
+
+.container-fluid-wrapper {
+  margin: 2rem;
+}
+
+.container-fluid-wrapper p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.student-hd-saved {
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.cleared-enter {
+  text-align: center;
+}
+
+.date-tom {
+  text-align: center;
+  font-weight: 700;
+
+  padding: 3rem !important;
+  margin: 0 !important;
+}
+
+.name-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-date-stdn-ctn {
+  margin-bottom: 2rem;
+}
+
+.ending-remarks {
+  /* Line Height 1.5 */
+  line-height: 1.8;
+  max-width: 32em;
+  margin: 0 !important;
+  padding-bottom: 3rem !important;
+  text-align: left;
+}
+
+.ending-remarks-ctn {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.vert-bar {
+  width: 100%;
+  max-width: 4px;
+  background-color: #d4af37;
+  margin-right: 2rem;
+  margin-bottom: 3rem !important;
+}
+
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}

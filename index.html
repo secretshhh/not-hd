@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8" />
+    <title>PLM Student Health Declaration System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Tab Title -->
+    <title>PLM | Student Health Declaration System</title>
+
+    <!-- Tab Icon -->
+    <link rel="icon" href="./images/PLMSeal.png" type="image/x-icon" />
+
+    <!-- Import Open Sans font from Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="js/jquery.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <!-- CSS Imports -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrapv2.css" />
+    <link rel="stylesheet" type="text/css" href="css/stylev2.css" />
+    <link rel="stylesheet" type="text/css" href="css/thank-you.css" />
+</head>
+
+<body class="alert-info">
+
+
+    <!-- HD-->
+    <br><br>
+    <div class="modal-dialog" role="document">
+        <div id="primary-modal" class="modal-content panel-primary">
+            <div class="modal-header panel-heading">
+                <img class="header-logo" src="./images/PLM.png" width="90%" height="50%" />
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Student Information -->
+                <div class="name-date-stdn-ctn">
+                    <div class="name-date">
+                        <b style="color:#3E54AC" contenteditable="true">LAST NAME, FIRST NAME MIDDLE NAME</b>
+                        <div class="time-date">
+                            <span contenteditable="true" id="yesterday">YY/MM/DD</span>
+                            7:34
+                        </div>
+                    </div>
+                    <p contenteditable="true">SN</p>
+                </div>
+                <!-- End of Student Information -->
+
+                <center>
+                    <h2 class="student-hd-saved">Student Health Declaration Saved!</h2>
+                    <h4 class="cleared-enter"> You are cleared to enter PLM premises tomorrow,</h4>
+
+                    <h1 class="date-tom" style="text-align: center; color: maroon;" contenteditable="true" id="today">
+                        YYYY/MM/DD</h1>
+
+                    <div class="ending-remarks-ctn">
+                        <div class="vert-bar"></div>
+                        <p class="ending-remarks">
+                            Subject to standard security and health protocols!
+
+
+                            Thank you for using PLM Health Declaration Form.
+                            <br>
+                            <br>
+                            Please always wear your mask, wash your hands and maintain social
+                            distancing.
+
+
+                            Don't forget to use PLM Health Declaration the day
+                            before
+                            you go to PLM
+
+                            to protect yourself, your loved ones and the PLM
+                            community.
+                        </p>
+                    </div> <!-- END ending-remarks-ctn -->
+                </center>
+
+            </div> <!-- END modal-body -->
+
+            <form>
+                <div class="modal-footer">
+                    <button class="btn btn-primary add-margin-top">
+                        <span class="glyphicon glyphicon-send"></span>
+                        &nbsp; Back to HD Page
+                    </button>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        // Get today's date
+        let date = new Date();
+        document.getElementById('today').innerHTML = date.toJSON().slice(0, 10).replace(/-/g, '/');
+
+        // Get yesterday's date
+        date.setDate(date.getDate() - 1);
+        document.getElementById('yesterday').innerHTML = date.toJSON().slice(0, 10).replace(/-/g, '/');
+    </script>
+</body>
+<section class="container-fluid-wrapper">
+    <div class="container-fluid">
+        <center>
+            <small>Pamantasan ng Lungsod ng Maynila - Information Communication and Technology Office (ICTO)</small>
+        </center>
+    </div>
+</section>
+
+</html>
